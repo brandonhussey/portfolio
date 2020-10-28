@@ -1,0 +1,64 @@
+.contact {
+  width: 90%;
+  min-height: 80vh;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+
+  h2 {
+    text-align: center;
+    font-size: 8rem;
+    padding: 2rem 0rem;
+    background: $gradient;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  form {
+    @include flex(center, center, column);
+
+    input,
+    textarea {
+      margin: 2rem;
+      border-radius: 2rem;
+      border: 3px solid;
+      padding: 1rem;
+    }
+
+    textarea {
+      font-family: "Monserrat", sans-serif;
+      font-size: 2rem;
+    }
+
+    button {
+      width: 30%;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      background: $gradient;
+      border-radius: 2rem;
+      color: white;
+
+      &:focus {
+        background: #28819e;
+      }
+
+      &:hover {
+        background: #28819e;
+      }
+    }
+  }
+}
+
+.contact-images,
+.contact-form {
+  flex: 1 1 40rem;
+}
+
+.splash {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  z-index: -1;
+}
